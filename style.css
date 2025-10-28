@@ -180,3 +180,21 @@ nav ul li a:hover {
   margin-top: 0.5em;
   margin-bottom: 3.5em;
 }
+
+/* Email */
+.contact-footer {
+  text-align: center;
+  margin-top: 2em;
+  padding: 1em 0;
+}
+
+.email-icon {
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.email-icon:hover {
+  color: #0077b6;
+}
