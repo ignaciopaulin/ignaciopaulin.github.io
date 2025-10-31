@@ -42,21 +42,37 @@
       </p>
     </article>
 
-    <div style="text-align: center; margin: 2em 0;">
-  <video class="sigmoid-video" controls style="max-width: 80%; height: auto;">
+    <style>
+  .video-container {
+    text-align: center;
+    margin: 2em 0;
+  }
+  .video-container video {
+    max-width: 80%;   /* limits width */
+    height: auto;     /* keeps aspect ratio */
+    border-radius: 10px; /* rounded corners */
+  }
+  .media-caption {
+    font-style: italic;
+    color: #555;
+  }
+</style>
+
+<div class="video-container">
+  <video class="sigmoid-video" controls>
     <source src="figures/sigmoid_vid.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <p class="media-caption">Guppy sigmoid display</p>
 </div>
 
-    <div style="text-align: center; margin: 2em 0;">
-      <video class="project-video" controls>
-        <source src="figures/sigmoid_track2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p class="media-caption">Tracking of guppy sigmoid display</p>
-    </div>
+<div class="video-container">
+  <video class="project-video" controls>
+    <source src="figures/sigmoid_track2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p class="media-caption">Tracking of guppy sigmoid display</p>
+</div>
 
     <article class="project" style="margin-bottom: 2em;">
       <h3>Mpala Baboon Research Project, Kenya</h3>
