@@ -221,3 +221,25 @@ nav ul li a:hover {
   padding: 15px 20px;
   border-radius: 6px;
 }
+
+/* Talk banner */
+.talk-announcement {
+  background-color: #2b6cb0; /* swap for a color that matches your site */
+  color: white;
+  text-align: center;
+  padding: 1.2em 1em;
+  margin: 1.5em auto;
+  max-width: 700px;
+  border-radius: 8px;
+  font-size: 1.3em;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.talk-announcement p {
+  margin: 0.2em 0;
+}
+
+.talk-announcement p:first-child {
+  font-size: 1.4em;
+}
