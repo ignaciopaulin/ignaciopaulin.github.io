@@ -243,3 +243,21 @@ nav ul li a:hover {
 .talk-announcement p:first-child {
   font-size: 1.4em;
 }
+
+
+/* Add to calendar */
+.add-to-calendar {
+  display: inline-block;
+  margin-top: 0.6em;
+  padding: 0.4em 1em;
+  background-color: white;
+  color: #2b6cb0;
+  font-size: 0.85em;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.add-to-calendar:hover {
+  background-color: #e8f0fe;
+}
