@@ -261,3 +261,72 @@ nav ul li a:hover {
 .add-to-calendar:hover {
   background-color: #e8f0fe;
 }
+
+/* ============================================
+   Mobile navigation (hamburger menu)
+   ============================================ */
+ 
+/* Hamburger button — hidden on desktop by default */
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+}
+ 
+.nav-toggle span {
+  position: absolute;
+  left: 10px;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+ 
+.nav-toggle span:nth-child(1) { top: 14px; }
+.nav-toggle span:nth-child(2) { top: 21px; }
+.nav-toggle span:nth-child(3) { top: 28px; }
+ 
+/* "X" state when menu is open */
+.nav-toggle.open span:nth-child(1) { top: 21px; transform: rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { top: 21px; transform: rotate(-45deg); }
+ 
+@media (max-width: 768px) {
+  /* Show the hamburger, hide the inline list */
+  .nav-toggle {
+    display: block;
+  }
+ 
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 54px;
+    right: 0;
+    background: #fff;
+    padding: 18px 26px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    gap: 16px;
+    min-width: 160px;
+  }
+ 
+  nav ul.open {
+    display: flex;
+  }
+ 
+  /* Menu sits on a solid white background on mobile, so links are always dark */
+  nav ul li a,
+  .index-page nav ul li a,
+  .research-page nav ul li a.dark-link,
+  .research-page nav ul li a.light-link {
+    color: #333 !important;
+  }
+}
